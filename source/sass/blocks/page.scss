@@ -1,0 +1,28 @@
+.page {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  box-sizing: border-box;
+  background-image: $bg-blue;
+  background-color: #396CAF;
+
+  @media (min-width: $viewport-mid) {
+    margin-top: 20px;
+  }
+
+  @media (min-width: $viewport-large) {
+  }
+}
+
+.page__wrapper {
+  @media (min-width: $viewport-large) {
+    position: relative;
+    min-height: 900px;
+    max-height: fit-content;
+    margin: 0;
+    margin: 0 auto;
+    padding: 0;
+  }
+}

@@ -1,0 +1,17 @@
+.header {
+  @media (min-width: $viewport-mid) {
+    position: relative;
+    width: 575px;
+    height: 100%;
+    margin: 0;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  @media (min-width: $viewport-large) {
+    position: absolute;
+    right: 54%;
+    width: 480px;
+    height: fit-content;
+  }
+}
