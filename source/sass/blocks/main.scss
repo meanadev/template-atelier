@@ -1,34 +1,4 @@
 .main {
-  max-width: 400px;
-  margin: 0;
-  margin: 0 auto;
-  position: relative;
-
-  @media (min-width: $viewport-mid) {
-    position: relative; 
-    min-width: 575px;
-    margin: 0;
-    margin: 0 auto;
-    margin-top: 20px;
-    padding: 0;
+  position: absolute;
+  top: 65px;
   }
-  
-
-  @media (min-width: $viewport-large) {
-    position: absolute;
-    top: -1%;
-    left: 45%;
-    min-width: 650px;
-  }
-}
-
-.card {
-
-  @media (min-width: $viewport-mid) {
-    margin-top: 20px;
-  }
-
-  @media (min-width: $viewport-large) {
-    margin-top: 0;
-  }
-}

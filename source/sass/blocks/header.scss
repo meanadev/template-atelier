@@ -1,17 +1,76 @@
 .header {
+  position: fixed;
+  width: 100vw;
+  height: 65px;
+  margin: 0;
+  padding: 0;
+  background-color: $black;
+  z-index: 1;
+
   @media (min-width: $viewport-mid) {
-    position: relative;
-    width: 575px;
-    height: 100%;
-    margin: 0;
-    margin: 0 auto;
-    padding: 0;
   }
 
   @media (min-width: $viewport-large) {
+  }
+}
+
+.menu {
+  position: relative;
+
+  &-btn__toggle {
     position: absolute;
-    right: 54%;
-    width: 480px;
-    height: fit-content;
+    top: 23px;
+    width: 30px;
+    height: 3px;
+    background-color: $white;
+    box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
+
+    &--open {
+      left: 30px;
+    }
+  }
+}
+
+.nav {
+  position: absolute;
+  top: 65px;
+  width: 200px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  padding: 16px 30px;
+  background: $nav-bg;
+
+  &__list {
+    width: 140px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $grey;
+    }
+
+    &:active {
+      color: $white;
+    }
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 }

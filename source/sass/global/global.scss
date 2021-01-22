@@ -18,12 +18,14 @@
   overflow: hidden;
 }
 
-.active {
-  opacity: 1;
-  visibility: visible;
-  z-index: 6;
+ul {
+  list-style: none;
 }
 
+a {
+  color: $grey;
+  text-decoration: none;
+}
 
 ::-webkit-scrollbar-track {
 	-webkit-box-shadow: none;
