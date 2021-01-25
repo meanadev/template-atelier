@@ -1,16 +1,19 @@
+.main {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
 .bg__img {
   position: relative;
   width: 100vw;
-  height: calc(100vw + 27vh);
+  height: 475px;
   overflow: hidden;
 
-  &-main {   
-     position: absolute;
+  &-main { 
+    position: absolute;  
     bottom: -235px;
     left: -195px;
-
-    width: 875px;
-    height: 1090px;
-
+    object-fit: cover;
   }
 }

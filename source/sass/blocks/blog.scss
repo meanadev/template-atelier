@@ -71,11 +71,12 @@
   &-btn {
     margin: 0;
     padding: 0;
-    margin-left: 20vw;
+    margin-left: calc(50vw - 100px);
     margin-top: 20px;
     margin-bottom: 10px;
-    width: 46.875vw;
-    height: 9.375vw;
+    width: 150px;
+    height: 30px;
+    font-family: "Lato";
     font-size: 10px;
     letter-spacing: 0.05em;
     line-height: 18px;
