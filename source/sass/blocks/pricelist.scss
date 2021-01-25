@@ -12,3 +12,55 @@
   font-size: 36px;
   text-align: center;
 }
+
+.pricelist__flex {
+  display: flex;
+  flex-flow: column;
+
+  &-left,
+  &-right {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.pricelist__list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+
+  &-price {
+    text-align: right;
+  }
+}
+
+.pricelist__item {
+  &-text {
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    font-family: "Playfair Display";
+    font-weight: normal;
+    font-size: 18px;
+  }
+
+  &-price {
+    margin: 0;
+    padding: 0;
+    margin-top: 45px;
+    font-size: 16px;
+    color: $coral;
+  }
+}
+
+.pricelist__terms-text {
+  margin: 0;
+  padding: 0;
+  margin: 40px 0;
+  padding-bottom: 40px;
+  width: 100%;
+  height: auto;
+  font-size: 11px;
+  border-bottom: 1px solid $grey-line;
+}
