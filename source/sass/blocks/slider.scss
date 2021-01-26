@@ -10,14 +10,15 @@
   position: relative;
   width: 100%;
   height: 67vw;
-  margin-top: -125px;
-  outline: 3vw solid $white;
-  z-index: 1;
 
   @media (min-width: $viewport-mid) {
-    width: 70vw;
+    width: 100%;
     height: 44.5vw;
-    margin-top: -180px;
+  }
+
+  @media (min-width: $viewport-large) {
+    width: 1000px;
+    height: 565px;
   }
 
   &__bg {
@@ -57,7 +58,7 @@
     position: absolute;
     bottom: 27px;
     right: 0;
-    width: 62.5vw;
+    width: 60vw;
     height: auto;
     margin: 0;
     padding: 0;

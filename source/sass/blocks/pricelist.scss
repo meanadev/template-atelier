@@ -1,4 +1,5 @@
 .pricelist {
+  position: relative;
   width: 100%;
   height: auto;
 }
@@ -15,17 +16,42 @@
   @media (min-width: $viewport-mid) {
     font-size: 44px;
     margin: 40px 0;
-  }    
+  } 
+  
+  @media (min-width: $viewport-large) {
+    margin: 60px 0 70px;
+    font-size: 72px;
+  }  
 }
 
 .pricelist__flex {
   display: flex;
   flex-flow: column;
 
+  @media (min-width: $viewport-large) {
+    flex-flow: row;
+    justify-content: space-between;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 190px;
+      left: 500px;
+      width: 1px;
+      height: 555px;
+      background-color: $grey;
+    }
+  }
+
   &-left,
   &-right {
     display: flex;
     justify-content: space-between;
+
+    @media (min-width: $viewport-large) {
+      position: relative;
+      flex-basis: 45%;
+    }  
   }
 }
 
@@ -81,5 +107,11 @@
   @media (min-width: $viewport-mid) {
     margin: 50px 0;
     font-size: 12px;
-  }    
+  }  
+  
+  @media (min-width: $viewport-large) {
+    margin: 0;
+    padding-bottom: 70px;
+    border-bottom: 2px solid $grey-line;
+  }
 }

@@ -1,17 +1,20 @@
 .wrapper {
-  top: 178vw;
+  position: relative;
   width: 87.5vw;
   height: auto;
+  margin-top: -125px;
+  padding: 3vw;
   background-color: $white;
-  outline: 3vw solid $white;
 
 
   @media (min-width: $viewport-mid) {
     width: 70vw;
+    margin-top: -205px;
     box-shadow: $shadow;
   }
 
   @media (min-width: $viewport-large) {
-    width: 70vw;
+    width: 1080px;
+    padding: 40px 40px 0;
   }
 }

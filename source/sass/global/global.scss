@@ -29,6 +29,11 @@ a {
   text-decoration: none;
 }
 
+:focus {
+  box-shadow: $shadow;
+  outline: none;
+}
+
 ::-webkit-scrollbar-track {
 	-webkit-box-shadow: none;
 	background-color: transparent;

@@ -10,26 +10,49 @@
   @media (min-width: $viewport-mid) {
     margin: 40px 0;
     font-size: 44px;
-  }    
+  } 
+
+  @media (min-width: $viewport-large) {
+    font-size: 72px;
+  }   
 }
 
 .latest {
   width: 100%;
   height: auto;
 
-  &-flex {
+  &__flex {
     display: flex;
     flex-flow: column;
+
+    @media (min-width: $viewport-large) {
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__list {
     width: 100%;
     height: auto;
+
+    @media (min-width: $viewport-large) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid $grey-line;
+    }
   }
 
   &__item {
     width: 100%;
     height: auto;
+
+    @media (min-width: $viewport-large) {
+      width: 225px;
+      margin: 0;
+      padding: 0;  
+    }
 
     &-link {
       width: 100%;
@@ -44,7 +67,12 @@
 
       @media (min-width: $viewport-mid) {
         height: 93vw;
-      }    
+      } 
+      
+      @media (min-width: $viewport-large) {
+        width: 225px;
+        height: 340px;
+      }  
     }
 
     &-img {
@@ -52,6 +80,11 @@
       width: auto;
       height: 100%;
       object-fit: cover;
+
+      @media (min-width: $viewport-large) {
+        width: 225px;
+        height: 340px;
+      }  
     }
 
     &-header {
@@ -66,10 +99,15 @@
 
       @media (min-width: $viewport-mid) {
         font-size: 32px;
-      }    
+      }  
+      
+      @media (min-width: $viewport-large) {
+        font-size: 28px;
+      }
     }
 
     &-text {
+      width: 100%;
       margin: 0;
       padding: 0;
       margin-bottom: 9vw;
@@ -77,6 +115,10 @@
       padding-bottom: 30px;
       border-bottom: 1px solid $grey-line;
 
+      @media (min-width: $viewport-large) {
+        margin-bottom: 40px;
+        border-bottom: none;
+      }    
     }
   }
 }
@@ -91,5 +133,11 @@
 
   @media (min-width: $viewport-mid) {
     font-size: 14px;
+  }
+}
+
+.date {
+  @media (min-width: $viewport-large) {
+    font-size: 10px;
   }
 }
