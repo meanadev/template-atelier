@@ -11,17 +11,9 @@
   background-color: $white;
 
   @media (min-width: $viewport-mid) {
+    background-color: $bg-grey;
   }
 
   @media (min-width: $viewport-large) {
-  }
-}
-
-.page__wrapper {
-  @media (min-width: $viewport-large) {
-    position: relative;
-    margin: 0;
-    margin: 0 auto;
-    padding: 0;
   }
 }

@@ -2,8 +2,16 @@
   top: 178vw;
   width: 87.5vw;
   height: auto;
+  background-color: $white;
+  outline: 3vw solid $white;
+
 
   @media (min-width: $viewport-mid) {
+    width: 70vw;
+    box-shadow: $shadow;
+  }
+
+  @media (min-width: $viewport-large) {
     width: 70vw;
   }
 }

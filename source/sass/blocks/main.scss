@@ -1,7 +1,12 @@
 .main {
   display: flex;
   flex-flow: column;
+  padding-top: 65px;
+  padding-bottom: 3vw;
   align-items: center;
+
+  @media (min-width: $viewport-large) {
+  }
 }
 
 .bg__img {
@@ -9,6 +14,11 @@
   width: 100vw;
   height: 475px;
   overflow: hidden;
+
+  @media (min-width: $viewport-large) {
+    height: 41.6vw;
+    max-height: 800px;;
+  }
 
   &-main { 
     position: absolute;  
@@ -19,6 +29,13 @@
     @media (min-width: $viewport-mid) {
       bottom: -320px;
       left: -40px;
+    } 
+    
+    @media (min-width: $viewport-large) {
+      width: 100vw;
+      height: 800px;
+      left: 0;
+      bottom: 0;
     }  
   }
 }
