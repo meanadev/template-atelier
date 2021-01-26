@@ -12,6 +12,11 @@
   font-weight: normal;
   font-size: 36px;
   text-align: center;
+
+  @media (min-width: $viewport-mid) {
+    margin: 40px 0 30px;
+    font-size: 44px;
+  }    
 }
 
 .contact__input {
@@ -24,6 +29,11 @@
   font-size: 11px;
   border: transparent;
   border-bottom: 2px solid $grey;
+
+  @media (min-width: $viewport-mid) {
+    height: 50px;
+    font-size: 13px;
+  }    
 }
 
 .contact__textarea {
@@ -37,12 +47,17 @@
   font-size: 11px;
   border: transparent;
   border-bottom: 2px solid $grey;
+
+  @media (min-width: $viewport-mid) {
+    height: 130px;
+    font-size: 13px;
+  }    
 }
 
 .contact__btn {
   margin: 0;
   padding: 0;
-  margin-left: calc(50vw - 100px);
+  margin-left: calc(44vw - 80px);
   margin-top: 30px;
   margin-bottom: 20px;
   width: 160px;
@@ -55,4 +70,10 @@
   color: $white;
   border: none;
   background-color: $coral;
+
+  @media (min-width: $viewport-mid) {
+    margin-left: calc(35vw - 80px);
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }    
 }

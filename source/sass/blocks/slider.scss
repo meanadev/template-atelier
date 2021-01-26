@@ -15,6 +15,12 @@
   outline: 3vw solid $white;
   z-index: 1;
 
+  @media (min-width: $viewport-mid) {
+    width: 70vw;
+    height: 44.5vw;
+    margin-top: -180px;
+  }
+
   &__bg {
     position: absolute;
     width: 100%;
@@ -59,9 +65,13 @@
     padding-right: 1.5vw;
     font-family: "Playfair Display";
     font-size: 12px;
-    font-weight: 600;
     color: $white;
     text-align: right;
+
+    @media (min-width: $viewport-mid) {
+      width: 50vw;
+      font-size: 16px;
+    }  
     
     &--quote {
       padding-bottom: 40px;
@@ -75,6 +85,7 @@
   display: flex;
   justify-content: space-between;
   width: 15.5vw;
+  max-width: 70px;
   height: auto;
   margin: 0;
   margin: 0 auto;

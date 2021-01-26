@@ -2,4 +2,8 @@
   top: 178vw;
   width: 87.5vw;
   height: auto;
-}                                                                                                                          
+
+  @media (min-width: $viewport-mid) {
+    width: 70vw;
+  }
+}

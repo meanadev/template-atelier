@@ -12,8 +12,13 @@
 
   &-main { 
     position: absolute;  
-    bottom: -235px;
-    left: -195px;
+    bottom: -310px;
+    left: -260px;
     object-fit: cover;
+
+    @media (min-width: $viewport-mid) {
+      bottom: -320px;
+      left: -40px;
+    }  
   }
 }
