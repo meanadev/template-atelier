@@ -33,6 +33,11 @@
     font-size: 18px;
     font-weight: normal;
     color: $coral;
+
+    @media (min-width: $viewport-large) {
+      font-family: "Playfair Display";
+      font-size: 24px;
+    }  
   }
 
   &__text {
@@ -43,6 +48,10 @@
     line-height: 19px;
     letter-spacing: 0.03em;
     color: $white;
+
+    @media (min-width: $viewport-large) {
+      margin-bottom: 30px;
+    }  
   }
 
   &__terms {

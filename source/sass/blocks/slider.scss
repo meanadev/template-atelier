@@ -69,12 +69,20 @@
     text-align: right;
 
     @media (min-width: $viewport-mid) {
-      width: 50vw;
+      width: 40vw;
       font-size: 16px;
+    }  
+
+    @media (min-width: $viewport-large) {
+      font-size: 26px;
     }  
     
     &--quote {
       padding-bottom: 40px;
+
+      @media (min-width: $viewport-large) {
+        padding-bottom: 65px;
+      }    
     }
   }
 }
@@ -90,6 +98,10 @@
   margin: 0;
   margin: 0 auto;
   padding: 0;
+
+  @media (min-width: $viewport-large) {
+    bottom: 25px;
+  }    
 
   &-feedback {
     width: 10px;

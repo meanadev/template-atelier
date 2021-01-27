@@ -35,7 +35,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 190px;
+      top: 175px;
       left: 500px;
       width: 1px;
       height: 555px;
@@ -50,7 +50,7 @@
 
     @media (min-width: $viewport-large) {
       position: relative;
-      flex-basis: 45%;
+      flex-basis: 42%;
     }  
   }
 }

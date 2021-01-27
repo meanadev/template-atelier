@@ -65,10 +65,11 @@
     object-fit: cover;
 
     @media (min-width: $viewport-mid) {
+      height: 40vw;
       margin-top: 0;
     }  
 
-    @media (min-width: $viewport-mid) {
+    @media (min-width: $viewport-large) {
       width: 390px;
       height: 235px;
       margin: 0;

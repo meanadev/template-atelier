@@ -2,7 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  cursor: pointer;
+  cursor: default;
 }
 
 .visually-hidden {
@@ -36,17 +36,20 @@ a {
 
 ::-webkit-scrollbar-track {
 	-webkit-box-shadow: none;
-	background-color: transparent;
-}
+  background-color: transparent;
+  }
 
 ::-webkit-scrollbar {
 	width: 6px;
-	background-color: transparent;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
 	background-color: rgba(0,0,0,0.3);
 	-webkit-border-radius: 6px;
-	border-radius: 6px;
-}
+  border-radius: 6px;
+  }
 
+  ::-webkit-scrollbar:horizontal {
+    display: none;
+  }
