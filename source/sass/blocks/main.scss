@@ -17,8 +17,7 @@
   overflow: hidden;
 
   @media (min-width: $viewport-large) {
-    height: 41.6vw;
-    max-height: 800px;;
+    height: 800px;
   }
 
   &-main { 
@@ -38,5 +37,42 @@
       left: 0;
       bottom: 0;
     }  
+  }
+}
+
+.bg {
+  position: relative;
+}
+
+.bg__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: auto;
+  height: auto;
+
+  @media (min-width: $viewport-mid) {
+    transform: translate(-50%, -170%);
+  }
+
+  &-img {
+    width: 240px;
+    height: 96px;
+  }
+
+  @media (min-width: $viewport-large) {
+    position: absolute;
+    top: 145px;
+    left: 50%;
+    transform: translate(-50%, -3vh);
+    width: auto;
+    height: auto;
+
+    &-img {
+      width: 517px;
+      height: 200px;
+      color: $white;
+    }
   }
 }

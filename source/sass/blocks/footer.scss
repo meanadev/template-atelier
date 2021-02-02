@@ -1,4 +1,5 @@
 .footer {
+  position: relative;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -82,5 +83,56 @@
         color: $white;
       }
     }
+  }
+}
+
+.footer__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+
+  &-img {
+    width: 137px;
+    height: 50px;
+    opacity: 0.17;
+  }
+
+  @media (min-width: $viewport-large) {
+    position: absolute;
+    top: 145px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: auto;
+
+    &-img {
+      width: 517px;
+      height: 200px;
+      color: $white;
+    }
+  }
+}
+
+.footer__icon {
+  display: flex;
+  flex-flow: row;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  margin: 0;
+  vertical-align: middle;
+
+
+  &-fb {
+    width: 12px;
+    height: 22.5px;
+    margin-right: 25px;
+  }
+
+  &-ig {
+    width: 22.5px;
+    height: 22.5px;
   }
 }

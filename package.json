@@ -17,7 +17,9 @@
     "url": "https://github.com/meanadev"
   },
   "homepage": "https://github.com/meanadev",
-  "dependencies": {},
+  "dependencies": {
+    "swiper": "^6.4.10"
+  },
   "devDependencies": {
     "gulp": "^4.0.2",
     "browser-sync": "^2.26.12",

@@ -1,6 +1,6 @@
 .wrapper {
   position: relative;
-  width: 87.5vw;
+  width: 90.5vw;
   height: auto;
   margin-top: -125px;
   padding: 3vw;
@@ -9,12 +9,13 @@
 
   @media (min-width: $viewport-mid) {
     width: 70vw;
-    margin-top: -205px;
+    margin-top: -260px;
     box-shadow: $shadow;
   }
 
   @media (min-width: $viewport-large) {
     width: 1140px;
     padding: 70px 70px 0;
+    margin-top: -360px;
   }
 }
