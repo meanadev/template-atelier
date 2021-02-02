@@ -1,0 +1,288 @@
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -300%;
+  }
+  98% {
+    left: -300%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
+}
+
+@media (hover: hover) {
+  .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+    animation-name: none;
+  }
+}
+
+.carousel {
+  position: relative;
+  padding-top: 67vw;
+  perspective: 100px;
+
+  @media (min-width: $viewport-mid) {
+    padding-top: 44.5vw;
+  }
+
+  @media (min-width: $viewport-large) {
+    padding-top: 565px;
+  }
+}
+
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow: hidden; 
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  counter-increment: item;
+}
+
+.carousel__slide:before {
+  content: counter(item);
+  position: absolute;
+  color: transparent;
+}
+
+.carousel-slider__img {
+  width: 87.5vw;
+  height: auto;
+
+  @media (min-width: $viewport-mid) {
+    width: 70vw;
+  }
+
+  @media (min-width: $viewport-large) {
+    width: 1140px;
+  }
+}
+
+.carousel__snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+}
+
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
+  animation-name: none;
+}
+
+.carousel__navigation {
+  position: relative;
+}
+
+.carousel__navigation-list,
+.carousel__navigation-item {
+  display: inline-block;
+}
+
+.carousel__navigation-list {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 20vw;
+  max-width: 70px;
+  height: auto;
+  margin: 0;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $viewport-large) {
+    max-width: 13.5vw;
+    bottom: 25px;
+  }    
+}
+
+.carousel__navigation-button {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: $white-toggle;
+  border: 1px solid $white;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+
+  &:not(:last-child) {
+    padding-right: 10px;
+  }
+
+  @media (min-width: $viewport-large) {
+    width: 15px;
+    height: 15px;
+  }    
+}
+
+.carousel__navigation-button:active,
+.carousel__navigation-button:hover {
+  background-color: $white;
+}
+
+.carousel::before,
+.carousel::after,
+.carousel__prev,
+.carousel__next {
+  position: absolute;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  font-size: 0;
+  outline: 0;
+}
+
+.carousel::after,
+.carousel__next {
+  right: 0;
+}
+
+.carousel::before,
+.carousel::after {
+  content: '';
+  z-index: 1;
+  pointer-events: none;
+}
+
+.carousel__text {
+  position: absolute;
+  width: 70vw;
+  height: auto;
+  font-family: "Playfair Display";
+  color: $white;
+
+  @media (min-width: $viewport-mid) {
+    width: 40vw;
+  }
+
+  @media (min-width: $viewport-large) {
+    width: 40vw;
+  }
+
+  &--left-top {
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    padding-left: 15px;
+  }
+
+  &--left-bottom {
+    bottom: 0;
+    left: 0;
+    padding-left: 15px;
+    padding-bottom: 13px;
+  }
+
+  &--right-top {
+    top: 0;
+    right: 0;
+    padding-top: 10px;
+    padding-right: 15px;
+    text-align: right;
+  }
+  
+  &--right-bottom {
+    bottom: 0;
+    right: 0;
+    padding-bottom: 13px;
+    padding-right: 15px;
+    text-align: right;
+  }
+}
+
+.carousel__quote {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+  font-size: 10px;
+  letter-spacing: 0.03em;
+
+  @media (min-width: $viewport-mid) {
+    padding-bottom: 10px;
+    font-size: 12px;
+  }
+
+  @media (min-width: $viewport-large) {
+    padding-bottom: 20px;
+    font-size: 20px;
+    line-height: 34px;
+  }
+}
+
+.carousel__name {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+
+  @media (min-width: $viewport-mid) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $viewport-large) {
+    font-size: 24px;
+  }
+}

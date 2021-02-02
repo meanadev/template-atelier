@@ -101,9 +101,14 @@
     text-transform: uppercase;
 
     @media (min-width: $viewport-large) {
+      position: relative;
       font-size: 24px;
       color: $menu-grey;
 
+      &:hover {
+        color: $white;
+        transition: ease-out 0.6s;
+      } 
     }
   }
 }

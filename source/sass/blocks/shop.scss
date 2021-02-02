@@ -6,7 +6,7 @@
 .shop__header {
   margin: 0;
   padding: 0;
-  margin: 30px 0;
+  padding: 30px 0;
   font-family: "Playfair Display";
   font-weight: normal;
   font-size: 36px;
@@ -14,11 +14,11 @@
 
   @media (min-width: $viewport-mid) {
     font-size: 44px;
-    margin: 40px 0;
+    padding: 40px 0;
   } 
   
   @media (min-width: $viewport-large) {
-    margin: 60px 0 70px;
+    padding: 70px 0 70px;
     font-size: 72px;
   }  
 }
@@ -176,4 +176,10 @@
       padding: 40px 0 15px;
     }    
   }
+}
+
+.shop__item:hover .shop__item-img {
+  box-shadow: $img-shadow;
+  transform: scale(1.1);
+  transition: ease-out 0.7s;
 }

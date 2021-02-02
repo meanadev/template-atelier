@@ -77,6 +77,10 @@
     &-link {
       color: $coral;
       padding-left: 3px;
+
+      &:hover {
+        color: $white;
+      }
     }
   }
 }

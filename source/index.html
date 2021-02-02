@@ -15,42 +15,68 @@
       </symbol>
     </svg>
     <header class="page__header header" id="home">
-      <div class="header__menu menu">
+      <!--
+        <div class="header__menu menu">
         <btn class="menu-btn__toggle menu-btn__toggle--open" type="button" aria-label="open menu"></btn>
       </div>
       <nav class="header__nav nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="#home">
+            <a class="nav__link" href="#">
               <p class="nav__text">Home</p>
             </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link active" href="#about">
-              <p class="nav__text">About</p>
+            <a class="nav__link active" href="#latest">
+              <p class="nav__text">Latest</p>
             </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#gallery">
-              <p class="nav__text">Gallery</p>
+            <a class="nav__link" href="#blog">
+              <p class="nav__text">Blog</p>
             </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#contacts">
+            <a class="nav__link" href="#shop">
+              <p class="nav__text">Shop</p>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#pricelist">
+              <p class="nav__text">Pricelist</p>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contact">
               <p class="nav__text">Contacts</p>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#follow">
-              <p class="nav__text">Follow</p>
             </a>
           </li>
         </ul>
       </nav>
+    -->
+      <section class="p-menu1">
+        <nav id="navbar" class="navigation" role="navigation">
+          <input id="toggle1" type="checkbox" />
+          <label class="hamburger1" for="toggle1">
+            <div class="top"></div>
+            <div class="meat"></div>
+            <div class="bottom"></div>
+          </label>
+        
+          <nav class="menu1">
+            <a class="link1" href="#">Home</a>
+            <a class="link1" href="#latest">Latest</a>
+            <a class="link1" href="#blog">Blog</a>
+            <a class="link1" href="#shop">Shop</a>
+            <a class="link1" href="#pricelist">Pricelist</a>
+            <a class="link1" href="#contact">Contact</a>
+          </nav>
+      </nav>
+      </section>
     </header>
   
     <main class="page__main main">
-      <section class="main__bg bg">
+      <section class="main__bg bg" id="home">
         <h1 class="visually-hidden">Atelier</h1>
         <div class="bg__img">
           <picture>
@@ -66,46 +92,92 @@
         </div>
       </section>
       <div class="wrapper">
-        <section class="main__feedback-slider feedback-slider">
-          <div class="feedback-slider__slider slider">
-            <div class="feedback-slider__bg feedback-slider__bg-1">
+        <section class="carousel" aria-label="Feedback">
+          <ol class="carousel__viewport">
+            <li class="carousel__slide" id="carousel__slide1" tabindex="0">
               <picture>
                 <source srcset="img/img-9.webp, img/img-9@2x.webp 2x" type="image/webp">
-                <img class="feedback-slider__img feedback-slider__img-1" src="img/img-9.png" srcset="img/img-9@2x.png 2x" alt="background">
-              </picture>  
-              <div class="feedback-slider__quote">
-                <p class="feedback-slider__text feedback-slider__text--quote">“A man without a smiling face must not open a shop.”</p>
-                <p class="feedback-slider__text">-Chinese Proverb</p>
-              </div>
-            </div>
-            <div class="feedback-slider__bg feedback-slider__bg-2">
-              <picture>
-                <source srcset="img/img-9.webp, img/img-9@2x.webp 2x" type="image/webp">
-                  <img class="feedback-slider__img feedback-slider__img-2" src="img/img-9.png" srcset="img/img-9@2x.png 2x" alt="background">
-                </picture>  
-              <div class="feedback-slider__quote">
-                <p class="feedback-slider__text feedback-slider__text--quote">“A man without a smiling face must not open a shop.”</p>
-                <p class="feedback-slider__text feedback-slider__text--name">-Chinese Proverb</p>
-              </div>
-            </div>
-            <div class="feedback-slider__bg feedback-slider__bg-3">
-              <picture>
-                <source srcset="img/img-9.webp, img/img-9@2x.webp 2x" type="image/webp">
-                  <img class="feedback-slider__img feedback-slider__img-3" src="img/img-9.png" srcset="img/img-9@2x.png 2x" alt="background">
-                </picture> 
-              <div class="feedback-slider__quote">
-                <p class="feedback-slider__text feedback-slider__text--quote">“A man without a smiling face must not open a shop.”</p>
-                <p class="feedback-slider__text">-Chinese Proverb</p>
+                <img class="carousel-slider__img feedback-slider__img-1" src="img/img-9.png" srcset="img/img-9@2x.png 2x" alt="background">
+              </picture> 
+              <div class="carousel__text carousel__text--left-top">
+                <p class="carousel__quote">"Provide the user a good way to navigate and interact with your site. Make your HTML code as semantic as possible."</p>
+                <p class="carousel__name">Lilian Woo</p>
               </div> 
-            </div> 
-            <div class="feedback-slider__toggle toggle">
-              <span class="toggle-feedback toggle-1"></span>
-              <span class="toggle-feedback toggle-2 toggle-active"></span>
-              <span class="toggle-feedback toggle-3"></span>
-            </div>     
-          </div>
-        </section>    
-        <section class="main__latest latest">
+              <div class="carousel__snapper">
+                <a href="#carousel__slide4"
+                   class="carousel__prev">Go to last slide</a>
+                <a href="#carousel__slide2"
+                   class="carousel__next">Go to next slide</a>
+              </div>
+            </li>
+            <li class="carousel__slide" id="carousel__slide2" tabindex="0">
+              <picture>
+                <source srcset="img/img-9.webp, img/img-9@2x.webp 2x" type="image/webp">
+                  <img class="carousel-slider__img feedback-slider__img-2" src="img/img-9.png" srcset="img/img-9@2x.png 2x" alt="background">
+              </picture>
+              <div class="carousel__text carousel__text--left-bottom">
+                <p class="carousel__quote">"Provide the user a good way to navigate and interact with your site. Make your HTML code as semantic as possible."</p>
+                <p class="carousel__name">Lilian Woo</p>
+              </div> 
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide1"
+                 class="carousel__prev">Go to previous slide</a>
+              <a href="#carousel__slide3"
+                 class="carousel__next">Go to next slide</a>
+            </li>
+            <li class="carousel__slide" id="carousel__slide3" tabindex="0">
+              <picture>
+                <source srcset="img/img-9.webp, img/img-9@2x.webp 2x" type="image/webp">
+                  <img class="carousel-slider__img feedback-slider__img-2" src="img/img-9.png" srcset="img/img-9@2x.png 2x" alt="background">
+              </picture>
+              <div class="carousel__text carousel__text--right-top">
+                <p class="carousel__quote">"Provide the user a good way to navigate and interact with your site. Make your HTML code as semantic as possible."</p>
+                <p class="carousel__name">Lilian Woo</p>
+              </div>   
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide2"
+                 class="carousel__prev">Go to previous slide</a>
+              <a href="#carousel__slide4"
+                 class="carousel__next">Go to next slide</a>
+            </li>
+            <li class="carousel__slide" id="carousel__slide4" tabindex="0">
+              <picture>
+                <source srcset="img/img-9.webp, img/img-9@2x.webp 2x" type="image/webp">
+                  <img class="carousel-slider__img feedback-slider__img-2" src="img/img-9.png" srcset="img/img-9@2x.png 2x" alt="background">
+              </picture>
+              <div class="carousel__text carousel__text--right-bottom">
+                <p class="carousel__quote">"Provide the user a good way to navigate and interact with your site. Make your HTML code as semantic as possible."</p>
+                <p class="carousel__name">Lilian Woo</p>
+              </div>   
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide3"
+                 class="carousel__prev">Go to previous slide</a>
+              <a href="#carousel__slide1"
+                 class="carousel__next">Go to first slide</a>
+            </li>
+          </ol>
+          <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide1"
+                   class="carousel__navigation-button">Go to slide 1</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide2"
+                   class="carousel__navigation-button">Go to slide 2</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide3"
+                   class="carousel__navigation-button">Go to slide 3</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide4"
+                   class="carousel__navigation-button">Go to slide 4</a>
+              </li>
+            </ol>
+          </aside>
+        </section>
+        <section class="main__latest latest" id="latest">
           <h2 class="latest__header">Latest</h2>
           <div class="latest__flex">
             <ul class="latest__list">
@@ -172,7 +244,7 @@
             </ul>
           </div>
         </section>
-        <section class="main__blog blog">
+        <section class="main__blog blog" id="blog">
           <h2 class="blog__header">Find Your Style</h2>
           <ul class="blog__list">
             <li class="blog__item">
@@ -222,7 +294,7 @@
             <p class="blog__link-text">more...</p>
           </a>
         </section>
-        <secttion class="main__shop shop">
+        <secttion class="main__shop shop" id="shop">
           <h2 class="shop__header">Shop</h2>
           <div class="shop__flex">
             <ul class="shop__list">
@@ -284,7 +356,7 @@
             </a>   
           </div>
         </secttion>
-        <section class="main__priceslist pricelist">
+        <section class="main__priceslist pricelist" id="pricelist">
           <h2 class="pricelist__header">Pricelist</h2>
           <div class="pricelist__flex">
             <div class="pricelist__flex-left">
@@ -368,7 +440,7 @@
           </div>
           <p class="pricelist__terms-text">Prices may vary according to...</p>
         </section>
-        <section class="main__contact contact">
+        <section class="main__contact contact" id="contact">
           <h2 class="contact__header">Contact us</h2>
           <form action="">
             <input class="contact__input contact__input-name" type="text" name="name" id="name" placeholder="Your Full Name">
@@ -402,5 +474,7 @@
         </div>  
       </div>
     </footer>
+
+    <script src="js/slider.js"></script>
   </body>
 </html>

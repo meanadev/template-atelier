@@ -6,20 +6,20 @@
 .contact__header {
   margin: 0;
   padding: 0;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   font-family: "Playfair Display";
   font-weight: normal;
   font-size: 36px;
   text-align: center;
 
   @media (min-width: $viewport-mid) {
-    margin: 40px 0 30px;
+    padding: 40px 0 30px;
     font-size: 44px;
   } 
   
   @media (min-width: $viewport-large) {
-    margin: 60px 0 70px;
+    padding: 70px 0 70px;
     font-size: 72px;
   }  
 }
@@ -98,5 +98,11 @@
   @media (min-width: $viewport-mid) {
     margin: 70px 0;
     margin-left: calc(35vw - 80px);
-  }    
+  } 
+  
+  @media (min-width: $viewport-large) {
+    &:hover {
+      color: $grey;
+    }
+  } 
 }

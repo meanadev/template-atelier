@@ -6,19 +6,19 @@
 .blog__header {
   margin: 0;
   padding: 0;
-  margin: 30px 0;
+  padding: 30px 0;
   font-family: "Playfair Display";
   font-weight: normal;
   font-size: 36px;
   text-align: center;
 
   @media (min-width: $viewport-mid) {
-    margin: 40px 0;
+    padding: 40px 0;
     font-size: 44px;
   }  
 
   @media (min-width: $viewport-large) {
-    margin: 60px 0 70px;
+    padding: 70px 0 70px;
     font-size: 72px;
   }  
 }
@@ -191,5 +191,20 @@
   @media (min-width: $viewport-large) {
     padding-bottom: 35px;
     border-bottom: 2px solid $grey-line;
+  }
+}
+
+.blog__item-date:hover,
+.blog__item-btn:hover {
+  @media (min-width: $viewport-large) {
+    color: $grey;
+  }
+}
+
+.blog__item-img:hover {
+  @media (min-width: $viewport-large) {
+    box-shadow: $img-shadow;
+    transform: scale(1.1);
+    transition: ease-out 0.6s;
   }
 }
