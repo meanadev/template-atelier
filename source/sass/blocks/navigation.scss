@@ -13,7 +13,6 @@
 } */
 
 a {
-  color: #fff;
   text-decoration: none;
 }
 
@@ -126,6 +125,7 @@ a {
   width: 100%;
   margin: 0;
   padding: 14px 0;
+  color: $white;
   text-transform: uppercase;
 
   &:not(:last-child) {
