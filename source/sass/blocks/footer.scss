@@ -95,22 +95,26 @@
   height: auto;
 
   &-img {
-    width: 137px;
-    height: 50px;
+    width: 43vw;
+    height: auto;
     opacity: 0.17;
+  }
+
+  @media (min-width: $viewport-mid) {
+    &-img {
+      width: 25vw;
+      height: auto;
+    }
   }
 
   @media (min-width: $viewport-large) {
     position: absolute;
-    top: 145px;
-    left: 50%;
-    transform: translateX(-50%);
     width: auto;
     height: auto;
 
     &-img {
-      width: 517px;
-      height: 200px;
+      width: auto;
+      max-height: 200px;
       color: $white;
     }
   }
@@ -132,7 +136,7 @@
   }
 
   &-ig {
-    width: 22.5px;
-    height: 22.5px;
+    width: 23.5px;
+    height: 25.5px;
   }
 }

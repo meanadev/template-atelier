@@ -53,12 +53,12 @@
   height: auto;
 
   @media (min-width: $viewport-mid) {
-    transform: translate(-50%, -170%);
+    transform: translate(-50%, -135%);
   }
 
   &-img {
-    width: 240px;
-    height: 96px;
+    width: 35vw;
+    height: auto;
   }
 
   @media (min-width: $viewport-large) {

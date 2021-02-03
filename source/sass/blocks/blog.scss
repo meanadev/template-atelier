@@ -6,14 +6,14 @@
 .blog__header {
   margin: 0;
   padding: 0;
-  padding: 30px 0;
+  padding: 60px 0 30px;
   font-family: "Playfair Display";
   font-weight: normal;
   font-size: 36px;
   text-align: center;
 
   @media (min-width: $viewport-mid) {
-    padding: 40px 0;
+    padding: 60px 0 40px;
     font-size: 44px;
   }  
 

@@ -6,7 +6,7 @@
 .shop__header {
   margin: 0;
   padding: 0;
-  padding: 30px 0;
+  padding: 60px 0 30px;
   font-family: "Playfair Display";
   font-weight: normal;
   font-size: 36px;
@@ -14,7 +14,7 @@
 
   @media (min-width: $viewport-mid) {
     font-size: 44px;
-    padding: 40px 0;
+    padding: 60px 0 40px;
   } 
   
   @media (min-width: $viewport-large) {
