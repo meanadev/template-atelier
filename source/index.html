@@ -407,16 +407,20 @@
           <a class="footer__text" href="tel:+37256400123">+ 372 5640 0123</a>
           </p>
           <div class="footer__icon">
-            <picture>
-              <svg class="footer__icon-fb">
-                <use href="#icon-fb"></use>
-              </svg>
-            </picture>
-            <picture>
-              <svg class="footer__icon-ig">
-                <use href="#icon-instagram"></use>
-              </svg>
-            </picture>  
+            <a href="https://www.instagram.com/meanadev/" target="_blank">
+              <picture>
+                <svg class="footer__icon-fb">
+                  <use href="#icon-fb"></use>
+                </svg>
+              </picture>  
+            </a>
+            <a href="https://www.instagram.com/meanadev/" target="_blank">
+              <picture>
+                <svg class="footer__icon-ig">
+                  <use href="#icon-instagram"></use>
+                </svg>
+              </picture>    
+            </a>
           </div>
         </div>
         <div class="footer__logo">
@@ -441,23 +445,23 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
   </body>
 </html>

@@ -54,10 +54,15 @@
 
   @media (min-width: $viewport-mid) {
     transform: translate(-50%, -135%);
+
+    &-img {
+      width: 35vw;
+      height: auto;
+    }
   }
 
   &-img {
-    width: 35vw;
+    width: 75vw;
     height: auto;
   }
 
