@@ -81,7 +81,7 @@
 .contact__btn {
   margin: 0;
   padding: 0;
-  margin-left: calc(44vw - 80px);
+  margin-left: calc(43vw - 80px);
   margin-top: 30px;
   margin-bottom: 20px;
   width: 160px;
@@ -97,10 +97,11 @@
 
   @media (min-width: $viewport-mid) {
     margin: 70px 0;
-    margin-left: calc(35vw - 80px);
+    margin-left: calc(33vw - 80px);
   } 
   
   @media (min-width: $viewport-large) {
+
     &:hover {
       color: $grey;
     }
