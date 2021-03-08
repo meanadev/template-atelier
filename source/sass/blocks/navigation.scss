@@ -100,7 +100,7 @@ a {
 
   @media (min-width: $viewport-large) {
     justify-content: start;
-    padding: 25px 30px;
+    padding: 11px 30px;
     margin-left: calc(50vw - 530px);
   }    
 }
@@ -109,7 +109,7 @@ a {
   margin-top: 20px;
 
   @media (min-width: $viewport-mid) {
-    margin: 0;
+    margin-top: 0;
   }    
 }
 
